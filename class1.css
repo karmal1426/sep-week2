@@ -1,0 +1,80 @@
+/* element: child, sibling, adjacent sibling, all siblings, direct, pseudo-class */
+/* class:pseudo-class */
+/* id */
+
+/* element this has a specificity of 001 meaning using one element */
+h1{
+    color: red;
+}
+
+p{
+    color: blue;
+}
+
+/* direct child element */
+
+body > h1{
+    color: green;
+}
+/* body > div > p{
+    color: green;
+} */
+
+
+/* all children selector */
+
+body p{
+    color: violet;
+}
+/* direct child/ children selector */
+body > p{
+    color: blue;
+}
+
+/* all sibling selector this for younger sibling identifier as it styles only but all the younger sibling element*/
+
+h1  ~ p{
+    color: orange;
+}
+
+
+p  ~ p{
+    color: gray;
+}
+
+/* adjacent sibling-- next to the specified sibling */
+
+/* h1 + h2{
+    color: chocolate;
+} */
+
+h1 ~ p{
+    color: seagreen;
+}
+
+p + p + p{
+    color: crimson;
+}
+
+/* any element selector */
+*{
+    /* border: px solid red; */
+    font-weight: normal;
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    color: inherit;
+}
+
+/* pseudo-class element */
+p::selection{
+    color: black;
+}
+
+::first-letter{
+    color: brown;
+}
+
+h2::first-letter{
+    color: plum;
+}

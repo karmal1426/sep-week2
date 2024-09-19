@@ -1,0 +1,47 @@
+/* class selector */
+
+.one{
+    background-color: aqua;
+}
+.two{
+    background-color: lavender;
+}
+p{
+    background-color: grey;
+}
+
+p.three{
+    background-color: blue;
+}
+
+ol > li.one{
+    background-color: red;
+}
+
+.one.two{
+    background-color: palegoldenrod;
+}
+
+.four{
+    background-color: plum;
+}
+
+
+
+/* pseudo-class element */
+
+li:first-of-type{
+    border: 20px solid magenta;
+}
+
+/* li:nth-child(even){
+    border: 20px solid maroon;
+} */
+
+li:nth-child(2n+1){
+    border: 20px dashed maroon;
+}
+
+li:nth-child(2n+6){
+    border: 20px dashed maroon;
+}

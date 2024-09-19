@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+</head>
+<body>
+    <h1>Create Account Details</h1>
+    <form>
+        <fieldset>
+            <legend>personal Information</legend>
+            <ul>
+                <li>
+                <!--    <label for="FirstName"> Your First Name</label> -->
+                    <input type="text" name="FirstName" id="FirstName" placeholder="First Name" title="input your first name" required>
+                </li>
+                <li>
+                    <input type="email" name="EmailName" id="EmailName" placeholder="Your Email Address" title="input your email address" required>
+                </li>
+                <li>
+                    <input type="tel" name="Phone" id="Phone" placeholder="Your Phone Number" title="input your phone number" required>
+                </li>
+                <li>
+                    <input type="date" name="dob" id="dob" title="fill your date of birth" placeholder="dob" required>
+                </li>
+                <li>
+                    <input type="password" name="Password" id="Password" title="Put a password" placeholder="Password" required>
+                </li>
+                <li>
+                    <textarea name="address" id="address" placeholder="address" rows="5" cols="50"></textarea>
+                </li>
+                <li>
+                    <input type="file" name="Upload your passport" id="Upload File" accept="multiple">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <fieldset>
+        <legend>Other Information</legend>
+        <div>
+            <p>gender</p>
+            <input type="radio" name="gender" id="Male">
+            <label for="Male">Male</label> <br>
+
+            <input type="radio" name="gender" id="Female">
+            <label for="Female">Female</label>
+        </div>
+        <div>
+            <p>state of origin</p>
+            <optgroup label="east" >
+                <select title="state of origin">
+                    <option value="ab">abia</option>
+                    <option value="en">enugu</option>
+                    <option value="an">anambra</option>
+                </select> 
+                
+
+            </optgroup >
+
+            <optgroup label="west">
+                <select title="Lagos" >
+                    <option value="Lg">Lagos</option>
+                    <option value="Od">Ondo</option>
+                    <option value="Og">Ogun</option>
+                </select>
+            
+            </optgroup>
+
+            <optgroup label="west">
+                <option value="Ng">Niger</option>
+                <option value="Pl">Pleateau</option>
+                <option value="Ad">Adamawa</option>
+
+
+            </optgroup>
+        </div>
+        
+        <div>
+            <p>courses</p>
+
+            <input type="checkbox" name="courses" id="python">
+            <label for="Python">python</label>
+
+            <input type="checkbox" name="çourses" id="javascript">
+            <label for="javascript">javascript</label>
+
+            <input type="checkbox" name="çourses" id="html">
+            <label for="html">html</label>
+
+            <input type="checkbox" name="çourses" id="css">
+            <label for="css">css</label>
+            
+            <input type="checkbox" name="çourses" id="tailwinders">
+            <label for="tailwindcss">tailwindcss</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">I accepet  <a href="#">all terms and conditions</a></label>
+        </div>
+        
+        <input type="submit" value="Sign-Up">
+
+    </fieldset>
+    
+</body>
+</html>

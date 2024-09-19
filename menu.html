@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Quater  Food menu</title>
+    <style>
+        table{
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        table tr{
+            border: 20px solid black;
+        }
+        table th, table td{
+            text-align: center;
+            border-inline: 10px solid brown;
+            padding-block: 25px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><h1>Last Quater Food Menu</h1></caption>
+        <col>
+        <col>
+        <col>
+        <thead>
+            <tr>
+                <th scope="col">Days</th>
+                <th scope="col">Breakfast</th>
+                <th scope="col">Lunch</th>
+                <th scope="col">Dinner</th>
+            </tr>
+        </thead>
+        <!-- tbody>(tr>th+td*3)*5 -->
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td rowspan="2">a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+            <tr>
+                <th>tuesday</th>
+                <!-- <td>a</td> -->
+                <td colspan="2">v</td>
+                <!-- <td>v</td> -->
+            </tr>
+            <tr>
+                <th>wenesday</th>
+                <td rowspan="3">k</td>
+                <td colspan="2">d</td>
+                <!-- <td>d</td> -->
+            </tr>
+            <tr>
+                <th>thursday</th>
+                <!-- <td>k</td> -->
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <th>friday</th>
+                <!-- <td>k</td> -->
+                <td colspan="2">g</td>
+                <!-- <td>g</td> -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4"><h2>food no dey finish</h2></th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
